@@ -18,11 +18,11 @@
 
   <style>
     :root{
-      --bg-dark: #000000;
-      --gold: #d4af37;
-      --gold-light: #f0d98c;
-      --text: #f5f5f5;
-      --muted: #bfbfbf;
+      --bg-dark:#000;
+      --gold:#d4af37;
+      --gold-light:#f0d98c;
+      --text:#f5f5f5;
+      --muted:#bfbfbf;
     }
     body{
       margin:0;
@@ -31,43 +31,42 @@
       color:var(--text);
       line-height:1.6;
     }
-    .wrap{max-width:960px;margin:20px auto;padding:16px}
-    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px}
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo .brand{font-family:'Cinzel',serif;font-weight:900;font-size:26px;letter-spacing:1px;color:var(--gold);text-shadow:1px 1px 4px rgba(0,0,0,0.8)}
-    .logo .vip-label{font-size:13px;color:var(--gold-light);}
-    .top-actions{display:flex;gap:10px;flex-wrap:wrap}
-
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:8px;font-weight:700;text-decoration:none;cursor:pointer;transition:0.25s;font-family:'Cinzel',serif;flex:1}
+    .wrap{max-width:1100px;margin:0 auto;padding:16px}
+    header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+    .logo{display:flex;flex-direction:column;gap:4px}
+    .logo .brand{font-family:'Cinzel',serif;font-weight:900;font-size:22px;color:var(--gold);}
+    .logo .vip-label{font-size:12px;color:var(--gold-light);}
+    .top-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{padding:10px 18px;border-radius:8px;font-weight:700;text-decoration:none;text-align:center;cursor:pointer;transition:0.25s;font-family:'Cinzel',serif;flex:1}
     .btn.vip{background:linear-gradient(180deg,var(--gold-light),var(--gold));color:#000;border:1px solid #8a6f1a;box-shadow:inset 0 0 6px rgba(0,0,0,0.6)}
     .btn.secondary{background:linear-gradient(180deg,#3a3a3a,#1c1c1c);color:var(--text);border:1px solid #444}
     .btn:hover{transform:translateY(-2px);box-shadow:0 0 10px rgba(212,175,55,0.6)}
 
-    .cta-row{display:flex;flex-direction:column;gap:12px}
-    @media(min-width:600px){.cta-row{flex-direction:row}}
+    .cta-row{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+    @media(min-width:640px){.cta-row{flex-direction:row}}
 
-    .cta-large{flex:1;padding:16px;border-radius:10px;font-size:18px;text-align:center;background:linear-gradient(180deg,var(--gold-light),var(--gold));color:#000;font-weight:700;text-transform:uppercase;font-family:'Cinzel',serif;letter-spacing:1px;border:1px solid #8a6f1a;transition:0.3s}
+    .cta-large{flex:1;padding:14px;border-radius:8px;font-size:16px;text-align:center;background:linear-gradient(180deg,var(--gold-light),var(--gold));color:#000;font-weight:700;text-transform:uppercase;font-family:'Cinzel',serif;letter-spacing:1px;border:1px solid #8a6f1a;transition:0.3s}
     .cta-large:hover{box-shadow:0 0 14px rgba(212,175,55,0.6);transform:translateY(-2px)}
 
-    .hero-card{background:rgba(0,0,0,0.85);padding:24px;border-radius:12px;margin-bottom:20px;opacity:0;transform:translateY(40px);transition:all 0.8s ease}
+    .hero-card{background:rgba(0,0,0,0.9);padding:20px;border-radius:10px;margin-bottom:16px;opacity:0;transform:translateY(30px);transition:all 0.8s ease}
     .hero-card.visible{opacity:1;transform:translateY(0)}
 
-    h1{margin:0 0 12px;font-size:28px;font-weight:900;font-family:'Cinzel',serif;color:var(--gold);}
-    h2{margin:16px 0 12px;font-size:22px;font-weight:700;font-family:'Cinzel',serif;color:var(--gold-light)}
-    h3{font-size:18px;font-weight:600;color:var(--gold)}
-    p.lead{color:var(--muted);margin:0 0 16px;font-size:16px}
+    h1{margin:0 0 10px;font-size:24px;font-weight:900;font-family:'Cinzel',serif;color:var(--gold)}
+    h2{margin:14px 0 10px;font-size:20px;font-weight:700;font-family:'Cinzel',serif;color:var(--gold-light)}
+    h3{font-size:16px;font-weight:600;color:var(--gold)}
+    p.lead{color:var(--muted);margin:0 0 14px;font-size:15px}
 
-    .promo{margin-top:14px;padding:16px;border-radius:10px;background:rgba(20,20,20,0.9);display:flex;align-items:center;justify-content:space-between;opacity:0;transform:translateY(40px);transition:all 0.8s ease;border:1px solid #5c3c00;flex-wrap:wrap;gap:10px}
+    .promo{margin-top:12px;padding:14px;border-radius:8px;background:rgba(20,20,20,0.9);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;opacity:0;transform:translateY(30px);transition:all 0.8s ease;border:1px solid #5c3c00}
     .promo.visible{opacity:1;transform:translateY(0)}
-    .promo .code{font-weight:900;font-size:20px;letter-spacing:2px;color:var(--gold);}
-    .copy-btn{padding:10px 16px;border-radius:8px;background:linear-gradient(180deg,var(--gold-light),var(--gold));color:#000;font-weight:700;cursor:pointer;border:1px solid #8a6f1a;text-transform:uppercase;letter-spacing:0.5px;transition:0.3s}
+    .promo .code{font-weight:900;font-size:18px;letter-spacing:2px;color:var(--gold)}
+    .copy-btn{padding:8px 14px;border-radius:8px;background:linear-gradient(180deg,var(--gold-light),var(--gold));color:#000;font-weight:700;cursor:pointer;border:1px solid #8a6f1a;text-transform:uppercase;font-size:14px;transition:0.3s}
     .copy-btn:hover{box-shadow:0 0 10px rgba(212,175,55,0.6)}
 
-    footer{margin-top:20px;padding:16px;border-radius:10px;background:rgba(0,0,0,0.85);color:var(--muted);font-size:13px;text-align:center;opacity:0;transform:translateY(40px);transition:all 0.8s ease;border:1px solid #5c3c00}
+    footer{margin-top:18px;padding:14px;border-radius:8px;background:rgba(0,0,0,0.85);color:var(--muted);font-size:12px;text-align:center;opacity:0;transform:translateY(30px);transition:all 0.8s ease;border:1px solid #5c3c00}
     footer.visible{opacity:1;transform:translateY(0)}
 
-    .faq-item h3{margin:0 0 6px}
-    .faq-item p{margin:0;color:var(--muted)}
+    .faq-item h3{margin:0 0 4px}
+    .faq-item p{margin:0;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
@@ -98,14 +97,14 @@
             <div class="vip-label">Ваш промокод:</div>
             <div class="code">ADBLOCK</div>
           </div>
-          <button class="copy-btn" id="copyPromo">Скопировать промокод</button>
+          <button class="copy-btn" id="copyPromo">Скопировать</button>
         </div>
       </section>
 
       <section class="hero-card">
         <h2>Почему выбирают Mellstroy Casino?</h2>
-        <p class="muted"><strong>Mellstroy Casino</strong> — это современная игровая платформа с большим выбором слотов, рулетки и покера. Казино работает онлайн и доступно с любых устройств.</p>
-        <p class="muted">Играй в <strong>1WIN</strong>, используй промокод <strong>ADBLOCK</strong> и получай щедрые бонусы.</p>
+        <p><strong>Mellstroy Casino</strong> — современная игровая платформа с большим выбором слотов, рулетки и покера. Казино работает онлайн и доступно с любых устройств.</p>
+        <p>Играй в <strong>1WIN</strong>, используй промокод <strong>ADBLOCK</strong> и получай щедрые бонусы.</p>
       </section>
 
       <section class="hero-card">
@@ -116,7 +115,7 @@
         </div>
         <div class="faq-item">
           <h3>Как получить бонусы?</h3>
-          <p>Просто зарегистрируйтесь в 1WIN и введите промокод <strong>ADBLOCK</strong> при регистрации.</p>
+          <p>Зарегистрируйтесь в 1WIN и введите промокод <strong>ADBLOCK</strong> при регистрации.</p>
         </div>
         <div class="faq-item">
           <h3>Есть ли бесплатные игры?</h3>
@@ -132,27 +131,23 @@
   </div>
 
   <script>
-    const copyBtn = document.getElementById('copyPromo');
-    const promo = 'ADBLOCK';
-    copyBtn.addEventListener('click', async ()=>{
+    const copyBtn=document.getElementById('copyPromo');
+    const promo='ADBLOCK';
+    copyBtn.addEventListener('click',async()=>{
       try{
         await navigator.clipboard.writeText(promo);
-        copyBtn.textContent = '✅ Скопировано!';
-        setTimeout(()=>copyBtn.textContent='Скопировать промокод',2000);
-      }catch(e){
-        alert('Ошибка копирования');
-      }
+        copyBtn.textContent='✅ Скопировано!';
+        setTimeout(()=>copyBtn.textContent='Скопировать',2000);
+      }catch(e){alert('Ошибка копирования');}
     });
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-        }
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){entry.target.classList.add('visible');}
       });
-    }, {threshold:0.2});
+    },{threshold:0.2});
 
-    document.querySelectorAll('.hero-card, .promo, footer').forEach(el => observer.observe(el));
+    document.querySelectorAll('.hero-card,.promo,footer').forEach(el=>observer.observe(el));
   </script>
 </body>
 </html>
