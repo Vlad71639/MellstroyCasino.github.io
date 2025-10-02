@@ -3,160 +3,228 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mellstroy Casino — официальный сайт, бонусы и промокод ADBLOCK</title>
-  <meta name="description" content="Mellstroy Casino — премиальное онлайн-казино. Играйте в 1WIN, используйте промокод ADBLOCK и получайте эксклюзивные бонусы. Удобный доступ с ПК и телефона.">
-  <meta name="keywords" content="Mellstroy Casino, Меллстрой казино, официальный сайт казино, промокод ADBLOCK, бонусы 1WIN, онлайн казино, регистрация Mellstroy Casino">
+  <title>Mellstroy Casino — бонусы, слоты и промокод ADBLOCK</title>
+  <meta name="description" content="Mellstroy Casino — премиальное онлайн-казино. Получайте бонусы, играйте в популярные слоты и используйте промокод ADBLOCK.">
+  <meta name="keywords" content="Mellstroy Casino, Меллстрой казино, онлайн слоты, бонусы казино, промокод ADBLOCK, 1WIN">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">
 
-  <!-- Open Graph (без изображения) -->
-  <meta property="og:title" content="Mellstroy Casino — играть онлайн, бонусы и промокод ADBLOCK">
-  <meta property="og:description" content="Используйте промокод ADBLOCK и начните играть в Mellstroy Casino прямо сейчас.">
+  <!-- Open Graph без картинки -->
+  <meta property="og:title" content="Mellstroy Casino — бонусы и слоты">
+  <meta property="og:description" content="Играй в Mellstroy Casino, получай бонусы и используй промокод ADBLOCK.">
   <meta property="og:url" content="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">
   <meta property="og:type" content="website">
 
   <style>
     body {
-      margin:0;
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background:#0a0a0a;
-      color:#eaeaea;
+      background: #0a0a0a;
+      color: #ddd;
+      overflow-x: hidden;
     }
-
-    /* Шапка только для ПК */
     header {
-      display:flex;
-      justify-content:flex-end;
-      padding:20px 40px;
-      background:#111;
-      border-bottom:1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-    header a {
-      color:#e6c472;
-      border:1px solid #e6c472;
-      padding:10px 22px;
-      border-radius:8px;
-      margin-left:12px;
-      font-weight:600;
-      text-decoration:none;
-      transition:all .3s ease;
+    .logo {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #fff;
     }
-    header a:hover {
-      background:#e6c472;
-      color:#111;
+    .nav-links {
+      display: flex;
+      gap: 16px;
     }
-    @media(max-width:768px){ header{display:none;} }
+    .nav-links a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color .3s;
+    }
+    .nav-links a:hover {
+      color: white;
+    }
 
-    /* Hero блок */
     .hero {
-      padding:70px 20px 40px;
-      text-align:center;
-      animation:fadeIn 1s ease;
+      text-align: center;
+      padding: 60px 20px 40px;
     }
     .hero h1 {
-      font-size:2.6em;
-      font-weight:800;
-      color:#fff;
-      margin-bottom:25px;
+      font-size: 2.4em;
+      margin-bottom: 20px;
+      color: #fff;
     }
-
-    /* Промокод */
     .promo {
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(230,196,114,0.4);
-      padding:20px;
-      border-radius:12px;
-      max-width:400px;
-      margin:0 auto 25px;
+      margin: 0 auto 30px;
+      max-width: 400px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
     }
-    .promo p { margin:0 0 10px; font-size:1em; color:#bbb; }
+    .promo p {
+      margin: 0;
+      color: #bbb;
+      font-size: 1em;
+    }
     .promo code {
-      font-size:1.8em;
-      font-weight:bold;
-      color:#e6c472;
-      letter-spacing:1px;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #caa85b;
     }
     .promo button {
-      margin-top:12px;
-      padding:12px 24px;
-      background:none;
-      border:1px solid #e6c472;
-      border-radius:8px;
-      cursor:pointer;
-      font-weight:600;
-      color:#e6c472;
-      transition:all .3s ease;
+      margin-top: 12px;
+      padding: 12px 24px;
+      background: none;
+      color: #caa85b;
+      border: 1px solid #caa85b;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background .3s, color .3s;
     }
     .promo button:hover {
-      background:#e6c472;
-      color:#111;
+      background: #caa85b;
+      color: #0a0a0a;
     }
 
-    /* Кнопки */
     .buttons a {
-      display:inline-block;
-      margin:10px;
-      padding:16px 32px;
-      font-size:1.1em;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:600;
-      color:#e6c472;
-      border:1px solid #e6c472;
-      transition:all .3s ease;
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #caa85b;
+      border: 1px solid #caa85b;
+      transition: background .3s, color .3s;
     }
     .buttons a:hover {
-      background:#e6c472;
-      color:#111;
+      background: #caa85b;
+      color: #0a0a0a;
     }
 
-    /* Контент */
+    .slots-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .slots-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8em;
+      color: #fff;
+    }
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+    }
+    .slot-card {
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform .3s;
+    }
+    .slot-card:hover {
+      transform: translateY(-6px);
+    }
+    .slot-card .img {
+      width: 100%;
+      padding-top: 56%; /* соотношение 16:9 */
+      background-position: center;
+      background-size: cover;
+    }
+    .slot-card .info {
+      padding: 12px;
+      flex-grow: 1;
+    }
+    .slot-card .info h3 {
+      font-size: 1em;
+      margin: 0 0 6px;
+      color: #fff;
+    }
+    .slot-card .info span {
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
     section {
-      padding:60px 20px;
-      max-width:900px;
-      margin:auto;
-      animation:fadeIn 1s ease;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
     }
     section h2 {
-      text-align:center;
-      margin-bottom:25px;
-      font-size:1.8em;
-      color:#fff;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.7em;
+      color: #fff;
     }
-    section p { line-height:1.7; font-size:1.05em; color:#ccc; }
-    section ul { list-style:none; padding:0; }
+    section p, section ul li {
+      line-height: 1.6;
+      color: #ccc;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
     section ul li {
-      margin:12px 0;
-      padding:14px 16px;
-      border-left:3px solid #e6c472;
-      background:rgba(255,255,255,0.03);
-      border-radius:6px;
+      margin: 12px 0;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.03);
+      border-left: 3px solid #caa85b;
+      border-radius: 6px;
     }
 
     footer {
-      background:#111;
-      padding:30px;
-      font-size:0.9em;
-      color:#888;
-      text-align:center;
-      border-top:1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+      padding: 30px 20px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
 
-    /* Анимации */
-    @keyframes fadeIn {
-      from { opacity:0; transform:translateY(20px);}
-      to { opacity:1; transform:translateY(0);}
+    /* Адаптив */
+    @media(max-width: 768px) {
+      .slots-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+      .hero h1 {
+        font-size: 1.9em;
+      }
+      .buttons a {
+        padding: 12px 22px;
+        font-size: 1em;
+      }
+      .promo code {
+        font-size: 1.4em;
+      }
+      .promo button {
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <a href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">Вход</a>
-    <a href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">Регистрация</a>
+    <div class="logo">Mellstroy Casino</div>
+    <nav class="nav-links">
+      <a href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">Вход</a>
+      <a href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">Регистрация</a>
+    </nav>
   </header>
 
   <div class="hero">
-    <h1>Mellstroy Casino</h1>
+    <h1>Добро пожаловать в Mellstroy Casino</h1>
     <div class="promo">
       <p>Ваш промокод:</p>
       <code id="promo">ADBLOCK</code><br>
@@ -168,45 +236,65 @@
     </div>
   </div>
 
+  <section class="slots-section">
+    <h2>Популярные слоты</h2>
+    <div class="slots-grid">
+      <div class="slot-card">
+        <div class="img" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.UwhLHi28psXgr4LcWzbHxgHaEm?pid=Api');"></div>
+        <div class="info"><h3>Sweet Bonanza</h3><span>Классика</span></div>
+      </div>
+      <div class="slot-card">
+        <div class="img" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.UwhLHi28psXgr4LcWzbHxgHaEm?pid=Api');"></div>
+        <div class="info"><h3>Gates of Olympus</h3><span>Топ слот</span></div>
+      </div>
+      <div class="slot-card">
+        <div class="img" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.UwhLHi28psXgr4LcWzbHxgHaEm?pid=Api');"></div>
+        <div class="info"><h3>The Dog House</h3><span>Весёлый</span></div>
+      </div>
+      <div class="slot-card">
+        <div class="img" style="background-image:url('https://tse4.mm.bing.net/th/id/OIP.UwhLHi28psXgr4LcWzbHxgHaEm?pid=Api');"></div>
+        <div class="info"><h3>Book of Dead</h3><span>Приключения</span></div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <h2>О Mellstroy Casino</h2>
-    <p>Mellstroy Casino — это премиальная платформа для азартных игр онлайн. Здесь сочетаются современные технологии, надёжность и щедрые бонусы. Благодаря сотрудничеству с <b>1WIN</b> пользователи получают доступ к топовым играм и уникальным акциям. Используя промокод <b>ADBLOCK</b>, каждый новый игрок Mellstroy Casino может рассчитывать на эксклюзивные преимущества и бонусы при регистрации.</p>
+    <p>Mellstroy Casino — премиальное онлайн-казино, вдохновлённое атмосферой стримов и азартом лучших слотов. Мы объединили интерфейс высокого класса, бонусные программы, интеграцию с платформой <b>1WIN</b> и честные условия для игроков. Промокод <b>ADBLOCK</b> закрепляет ваше преимущество с самого старта.</p>
   </section>
 
   <section>
     <h2>Преимущества Mellstroy Casino</h2>
     <ul>
-      <li>Надёжная интеграция с ведущей платформой 1WIN.</li>
-      <li>Промокод ADBLOCK для активации премиальных бонусов.</li>
-      <li>Современный дизайн и полная адаптация под мобильные устройства.</li>
-      <li>Приветственные бонусы, акции и эксклюзивные предложения.</li>
+      <li>Интеграция с 1WIN и доступ к топовым играм</li>
+      <li>Эксклюзивный промокод ADBLOCK</li>
+      <li>Полная адаптация под устройства любого размера</li>
+      <li>Приветственные бонусы и регулярные акции</li>
     </ul>
   </section>
 
   <section>
-    <h2>Как начать играть</h2>
-    <p>Чтобы начать игру в Mellstroy Casino:</p>
+    <h2>Как начать игру</h2>
     <ul>
-      <li>Нажмите кнопку «Регистрация» и создайте аккаунт.</li>
+      <li>Нажмите «Регистрация» и создайте аккаунт.</li>
       <li>Введите промокод <b>ADBLOCK</b> при регистрации.</li>
-      <li>Пополните баланс удобным способом.</li>
-      <li>Выбирайте любимые игры и наслаждайтесь процессом.</li>
+      <li>Пополните счёт и начните играть.</li>
     </ul>
   </section>
 
   <section>
-    <h2>FAQ — ответы на вопросы</h2>
+    <h2>FAQ</h2>
     <h3>Что такое Mellstroy Casino?</h3>
-    <p>Это онлайн-казино с премиальным подходом и интеграцией с 1WIN.</p>
-    <h3>Какие бонусы доступны?</h3>
-    <p>Приветственные, депозитные и акции с промокодом ADBLOCK.</p>
+    <p>Это онлайн-казино с премиальным подходом, бонусами и удобным интерфейсом.</p>
+    <h3>Что такое промокод ADBLOCK?</h3>
+    <p>Код, который позволяет активировать бонусные предложения при регистрации.</p>
     <h3>Можно ли играть с телефона?</h3>
-    <p>Да, сайт полностью оптимизирован для смартфонов и планшетов.</p>
+    <p>Да, сайт полностью адаптирован под мобильные устройства.</p>
   </section>
 
   <footer>
-    <p>© 2025 Mellstroy Casino. Азартные игры доступны только для совершеннолетних (18+). Играйте ответственно. Mellstroy Casino и 1WIN — ведущие бренды онлайн-гейминга.</p>
+    <p>© 2025 Mellstroy Casino. Азартные игры доступны только лицам старше 18 лет. Играйте ответственно.</p>
   </footer>
+
 </body>
 </html>
-
