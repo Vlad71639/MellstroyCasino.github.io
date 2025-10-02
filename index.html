@@ -9,13 +9,13 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">
 
-  <!-- Open Graph -->
+  <!-- Open Graph (без фото) -->
   <meta property="og:title" content="Mellstroy Casino — играть онлайн и получать бонусы">
   <meta property="og:description" content="Используйте промокод ADBLOCK и начните играть в Mellstroy Casino прямо сейчас.">
   <meta property="og:url" content="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">
   <meta property="og:type" content="website">
 
-  <!-- Twitter Card -->
+  <!-- Twitter Card (без фото) -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mellstroy Casino — играть онлайн и получать бонусы">
   <meta name="twitter:description" content="Mellstroy Casino, 1WIN и промокод ADBLOCK. Играйте онлайн прямо сейчас.">
@@ -24,40 +24,50 @@
     body {
       margin:0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0d0d0d 0%, #1a0026 100%);
+      background: #0d0d0d;
       color:white;
       overflow-x:hidden;
       text-align:center;
     }
+
     header {
       display:flex;
       justify-content:flex-end;
       padding:20px 30px;
+      background: rgba(255,255,255,0.05);
+      border-bottom:1px solid rgba(255,255,255,0.1);
     }
     header a {
-      background: linear-gradient(45deg,#ff0080,#7928ca);
+      background: linear-gradient(90deg,#ff0080,#7928ca);
       color:white;
-      padding:10px 18px;
+      padding:10px 20px;
       border-radius:8px;
       text-decoration:none;
       margin-left:10px;
       font-weight:bold;
-      box-shadow:0 0 10px rgba(255,0,128,0.7);
+      box-shadow:0 0 12px rgba(255,0,128,0.6);
       transition:0.3s;
+      position:relative;
+      overflow:hidden;
     }
-    header a:hover { transform:scale(1.05); }
+    header a:hover {
+      transform:scale(1.05);
+    }
     @media(max-width:768px){ header { display:none; } }
 
     .hero {
-      padding:100px 20px 60px;
+      padding:90px 20px 60px;
       position:relative;
       z-index:2;
     }
     .hero h1 {
       font-size:3em;
       text-transform:uppercase;
-      text-shadow:0 0 20px rgba(255,0,128,0.9);
-      margin-bottom:30px;
+      font-weight:900;
+      margin-bottom:35px;
+      background: linear-gradient(90deg,#ff0080,#00eaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .buttons a {
       display:inline-block;
@@ -67,41 +77,47 @@
       border-radius:12px;
       text-decoration:none;
       color:white;
-      background: linear-gradient(45deg,#ff0080,#00eaff);
+      background: linear-gradient(90deg,#ff0080,#00eaff);
       box-shadow:0 0 25px rgba(0,234,255,0.6);
       font-weight:bold;
       transition:0.3s;
+      animation:pulse 2s infinite;
     }
-    .buttons a:hover { transform:translateY(-4px); }
+    .buttons a:hover { transform:translateY(-4px) scale(1.05); }
+    @keyframes pulse {
+      0% { box-shadow:0 0 15px rgba(0,234,255,0.4); }
+      50% { box-shadow:0 0 30px rgba(255,0,128,0.8); }
+      100% { box-shadow:0 0 15px rgba(0,234,255,0.4); }
+    }
 
     .promo {
       margin:40px auto;
       padding:25px;
       border-radius:15px;
-      max-width:400px;
+      max-width:420px;
       background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.15);
       backdrop-filter: blur(8px);
-      border:1px solid rgba(255,255,255,0.2);
     }
     .promo code {
       font-size:2em;
       font-weight:bold;
       color:#00eaff;
-      text-shadow:0 0 10px #00eaff;
+      text-shadow:0 0 12px #00eaff;
     }
     .promo button {
       margin-top:15px;
       padding:12px 25px;
-      background: linear-gradient(45deg,#00eaff,#ff0080);
+      background: linear-gradient(90deg,#00eaff,#ff0080);
       border:none;
       border-radius:8px;
       cursor:pointer;
       font-weight:bold;
       color:white;
-      box-shadow:0 0 15px rgba(255,0,128,0.7);
+      box-shadow:0 0 15px rgba(255,0,128,0.6);
       transition:0.3s;
     }
-    .promo button:hover { transform:scale(1.05); }
+    .promo button:hover { transform:scale(1.08); }
 
     section {
       padding:60px 20px;
@@ -113,18 +129,18 @@
       text-align:center;
       margin-bottom:30px;
       font-size:2em;
-      text-shadow:0 0 15px rgba(255,0,128,0.7);
+      color:#fff;
+      text-shadow:0 0 12px rgba(255,0,128,0.6);
     }
-    section p, section li { line-height:1.7; font-size:1.1em; }
     section ul { list-style:none; padding:0; }
     section ul li {
       margin:15px 0;
       padding:15px 20px;
       background:rgba(255,255,255,0.05);
       border-radius:10px;
-      backdrop-filter: blur(6px);
       box-shadow:0 0 10px rgba(255,255,255,0.1);
     }
+    section p { line-height:1.7; font-size:1.1em; }
 
     footer {
       background:rgba(255,255,255,0.05);
@@ -132,29 +148,11 @@
       font-size:0.9em;
       color:#aaa;
       text-align:center;
-    }
-
-    .bg-text {
-      position:fixed;
-      top:50%; left:50%;
-      transform:translate(-50%,-50%);
-      font-size:6em;
-      font-weight:bold;
-      color:rgba(255,255,255,0.04);
-      white-space:nowrap;
-      z-index:0;
-      pointer-events:none;
-      animation:move 20s linear infinite;
-    }
-    @keyframes move {
-      0% { transform:translate(-50%,-50%) rotate(0deg); }
-      100% { transform:translate(-50%,-50%) rotate(360deg); }
+      border-top:1px solid rgba(255,255,255,0.1);
     }
   </style>
 </head>
 <body>
-  <div class="bg-text">MELLSTROY CASINO</div>
-
   <header>
     <a href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">Вход</a>
     <a href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">Регистрация</a>
@@ -176,7 +174,7 @@
 
   <section>
     <h2>О Mellstroy Casino</h2>
-    <p>Mellstroy Casino — это стильное онлайн-казино, вдохновлённое атмосферой стримов Меллстроя. Игроки получают доступ к лучшим слотам, азартным играм и бонусам. Промокод <strong>ADBLOCK</strong> активирует эксклюзивные предложения для новых пользователей.</p>
+    <p>Mellstroy Casino — это современное онлайн-казино с акцентом на честность, удобство и эксклюзивные бонусы. Мы собрали лучшее из индустрии: быстрый доступ к играм, надёжность платформы 1WIN и уникальный стиль, вдохновлённый Меллстроем.</p>
   </section>
 
   <section>
@@ -192,9 +190,9 @@
   <section>
     <h2>FAQ — Часто задаваемые вопросы</h2>
     <h3>Что такое Mellstroy Casino?</h3>
-    <p>Mellstroy Casino — это онлайн-казино с уникальной атмосферой стримов и щедрыми бонусами.</p>
+    <p>Mellstroy Casino — онлайн-казино, которое сочетает атмосферу стримов и премиальный сервис для игроков.</p>
     <h3>Как использовать промокод ADBLOCK?</h3>
-    <p>Введите его при регистрации или депозите, чтобы получить бонус.</p>
+    <p>Введите ADBLOCK при регистрации или депозите, чтобы получить бонус.</p>
     <h3>Можно ли играть с телефона?</h3>
     <p>Да, сайт полностью адаптирован под мобильные устройства.</p>
     <h3>Какие бонусы доступны?</h3>
@@ -202,7 +200,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Mellstroy Casino. Информация носит ознакомительный характер. Азартные игры доступны только для совершеннолетних (18+).</p>
+    <p>© 2025 Mellstroy Casino. Азартные игры доступны только для совершеннолетних (18+). Играйте ответственно.</p>
   </footer>
 </body>
 </html>
