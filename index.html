@@ -9,105 +9,113 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">
 
-  <!-- Open Graph (без фото, чтобы не подхватывался лес) -->
+  <!-- Open Graph (без изображения) -->
   <meta property="og:title" content="Mellstroy Casino — играть онлайн, бонусы и промокод ADBLOCK">
   <meta property="og:description" content="Используйте промокод ADBLOCK и начните играть в Mellstroy Casino прямо сейчас.">
   <meta property="og:url" content="https://1wauxn.com/v3/2672/sweet-bonanza?p=uy3f">
   <meta property="og:type" content="website">
 
-  <!-- Twitter Card (без картинки) -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Mellstroy Casino — играть онлайн и получать бонусы">
-  <meta name="twitter:description" content="Mellstroy Casino и промокод ADBLOCK. Играй онлайн, получай бонусы.">
-
   <style>
     body {
       margin:0;
       font-family: 'Segoe UI', sans-serif;
-      background:#0b0b0b;
-      color:#e6e6e6;
-      overflow-x:hidden;
+      background:#0a0a0a;
+      color:#eaeaea;
     }
 
-    /* Шапка */
+    /* Шапка только для ПК */
     header {
       display:flex;
       justify-content:flex-end;
-      padding:20px 30px;
-      background:rgba(255,255,255,0.03);
+      padding:20px 40px;
+      background:#111;
       border-bottom:1px solid rgba(255,255,255,0.1);
     }
     header a {
-      background: linear-gradient(90deg,#0057ff,#00c6ff);
-      color:white;
-      padding:10px 20px;
-      border-radius:6px;
-      text-decoration:none;
-      margin-left:10px;
+      color:#e6c472;
+      border:1px solid #e6c472;
+      padding:10px 22px;
+      border-radius:8px;
+      margin-left:12px;
       font-weight:600;
-      transition:0.3s;
+      text-decoration:none;
+      transition:all .3s ease;
     }
-    header a:hover { opacity:0.85; }
-    @media(max-width:768px){ header { display:none; } }
+    header a:hover {
+      background:#e6c472;
+      color:#111;
+    }
+    @media(max-width:768px){ header{display:none;} }
 
-    /* Hero */
+    /* Hero блок */
     .hero {
-      padding:60px 20px 30px;
+      padding:70px 20px 40px;
       text-align:center;
+      animation:fadeIn 1s ease;
     }
     .hero h1 {
-      font-size:2.4em;
+      font-size:2.6em;
       font-weight:800;
       color:#fff;
-      margin-bottom:20px;
+      margin-bottom:25px;
     }
+
+    /* Промокод */
     .promo {
-      margin:0 auto 20px;
-      padding:18px;
-      border-radius:10px;
-      max-width:420px;
       background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.1);
-      text-align:center;
+      border:1px solid rgba(230,196,114,0.4);
+      padding:20px;
+      border-radius:12px;
+      max-width:400px;
+      margin:0 auto 25px;
     }
-    .promo p { margin:0 0 10px; font-size:1em; color:#ccc; }
+    .promo p { margin:0 0 10px; font-size:1em; color:#bbb; }
     .promo code {
-      font-size:1.6em;
+      font-size:1.8em;
       font-weight:bold;
-      color:#00c6ff;
+      color:#e6c472;
+      letter-spacing:1px;
     }
     .promo button {
-      margin-top:10px;
-      padding:10px 20px;
-      background: linear-gradient(90deg,#0057ff,#00c6ff);
-      border:none;
-      border-radius:6px;
+      margin-top:12px;
+      padding:12px 24px;
+      background:none;
+      border:1px solid #e6c472;
+      border-radius:8px;
       cursor:pointer;
       font-weight:600;
-      color:white;
-      transition:0.3s;
+      color:#e6c472;
+      transition:all .3s ease;
     }
-    .promo button:hover { opacity:0.85; }
+    .promo button:hover {
+      background:#e6c472;
+      color:#111;
+    }
 
+    /* Кнопки */
     .buttons a {
       display:inline-block;
       margin:10px;
-      padding:14px 24px;
+      padding:16px 32px;
       font-size:1.1em;
-      border-radius:8px;
+      border-radius:10px;
       text-decoration:none;
-      color:white;
-      background: linear-gradient(90deg,#0057ff,#00c6ff);
       font-weight:600;
-      transition:0.3s;
+      color:#e6c472;
+      border:1px solid #e6c472;
+      transition:all .3s ease;
     }
-    .buttons a:hover { opacity:0.85; }
+    .buttons a:hover {
+      background:#e6c472;
+      color:#111;
+    }
 
     /* Контент */
     section {
-      padding:50px 20px;
+      padding:60px 20px;
       max-width:900px;
       margin:auto;
+      animation:fadeIn 1s ease;
     }
     section h2 {
       text-align:center;
@@ -115,22 +123,29 @@
       font-size:1.8em;
       color:#fff;
     }
+    section p { line-height:1.7; font-size:1.05em; color:#ccc; }
     section ul { list-style:none; padding:0; }
     section ul li {
       margin:12px 0;
-      padding:12px 15px;
-      background:rgba(255,255,255,0.04);
-      border-radius:8px;
+      padding:14px 16px;
+      border-left:3px solid #e6c472;
+      background:rgba(255,255,255,0.03);
+      border-radius:6px;
     }
-    section p { line-height:1.7; font-size:1.05em; }
 
     footer {
-      background:rgba(255,255,255,0.03);
-      padding:25px;
-      font-size:0.85em;
-      color:#aaa;
+      background:#111;
+      padding:30px;
+      font-size:0.9em;
+      color:#888;
       text-align:center;
       border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Анимации */
+    @keyframes fadeIn {
+      from { opacity:0; transform:translateY(20px);}
+      to { opacity:1; transform:translateY(0);}
     }
   </style>
 </head>
@@ -155,38 +170,38 @@
 
   <section>
     <h2>О Mellstroy Casino</h2>
-    <p>Mellstroy Casino — официальный сайт, где сочетаются азарт, стиль и надёжность. Здесь вы найдёте интеграцию с платформой <b>1WIN</b>, быстрые выплаты, удобный интерфейс и бонусы для новых игроков. Промокод <b>ADBLOCK</b> позволяет активировать эксклюзивные предложения для клиентов Mellstroy Casino.</p>
+    <p>Mellstroy Casino — это премиальная платформа для азартных игр онлайн. Здесь сочетаются современные технологии, надёжность и щедрые бонусы. Благодаря сотрудничеству с <b>1WIN</b> пользователи получают доступ к топовым играм и уникальным акциям. Используя промокод <b>ADBLOCK</b>, каждый новый игрок Mellstroy Casino может рассчитывать на эксклюзивные преимущества и бонусы при регистрации.</p>
   </section>
 
   <section>
     <h2>Преимущества Mellstroy Casino</h2>
     <ul>
-      <li>Надёжная интеграция с платформой 1WIN.</li>
-      <li>Уникальный промокод ADBLOCK для новых игроков.</li>
-      <li>Современный дизайн и адаптация под все устройства.</li>
-      <li>Приветственные бонусы и регулярные акции.</li>
+      <li>Надёжная интеграция с ведущей платформой 1WIN.</li>
+      <li>Промокод ADBLOCK для активации премиальных бонусов.</li>
+      <li>Современный дизайн и полная адаптация под мобильные устройства.</li>
+      <li>Приветственные бонусы, акции и эксклюзивные предложения.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Как начать играть в Mellstroy Casino</h2>
-    <p>Чтобы начать игру:</p>
+    <h2>Как начать играть</h2>
+    <p>Чтобы начать игру в Mellstroy Casino:</p>
     <ul>
-      <li>Нажмите кнопку <b>Регистрация</b> и создайте аккаунт.</li>
-      <li>Введите промокод <b>ADBLOCK</b> для активации бонуса.</li>
+      <li>Нажмите кнопку «Регистрация» и создайте аккаунт.</li>
+      <li>Введите промокод <b>ADBLOCK</b> при регистрации.</li>
       <li>Пополните баланс удобным способом.</li>
-      <li>Выбирайте любимые игры и выигрывайте вместе с Mellstroy Casino.</li>
+      <li>Выбирайте любимые игры и наслаждайтесь процессом.</li>
     </ul>
   </section>
 
   <section>
-    <h2>FAQ — Вопросы и ответы</h2>
+    <h2>FAQ — ответы на вопросы</h2>
     <h3>Что такое Mellstroy Casino?</h3>
-    <p>Это онлайн-казино с бонусами, промокодами и интеграцией с 1WIN.</p>
+    <p>Это онлайн-казино с премиальным подходом и интеграцией с 1WIN.</p>
     <h3>Какие бонусы доступны?</h3>
-    <p>Приветственные, депозитные и специальные акции с промокодом ADBLOCK.</p>
+    <p>Приветственные, депозитные и акции с промокодом ADBLOCK.</p>
     <h3>Можно ли играть с телефона?</h3>
-    <p>Да, сайт полностью адаптирован под смартфоны и планшеты.</p>
+    <p>Да, сайт полностью оптимизирован для смартфонов и планшетов.</p>
   </section>
 
   <footer>
@@ -194,3 +209,4 @@
   </footer>
 </body>
 </html>
+
